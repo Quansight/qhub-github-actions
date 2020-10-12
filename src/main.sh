@@ -6,8 +6,7 @@ function stripColors {
 
 function installQhub {
   echo "Downloading QHub v${qhubVersion}"
-  # Uncomment me
-  # pip install qhub
+  pip install qhub
   echo "Successfully unzipped QHub v${qhubVersion}"
 }
 
