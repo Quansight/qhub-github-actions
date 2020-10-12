@@ -12,6 +12,12 @@ steps:
     qhub_version: 0.0.1
 ```
 
+# Test
+
+```
+docker run --env-file env -v /path/to/host/directory:/mnt/data image
+```
+
 # Inputs
 
 The action supports the following inputs:

@@ -6,7 +6,8 @@ function stripColors {
 
 function installQhub {
   echo "Downloading QHub v${qhubVersion}"
-  pip install qhub
+  # Uncomment me
+  # pip install qhub
   echo "Successfully unzipped QHub v${qhubVersion}"
 }
 
@@ -47,6 +48,8 @@ function main {
   source ${scriptDir}/qhub_push.sh
 
   parseInputs
+  cd ${GITHUB_WORKSPACE}/${qhubWorkingDir}
+  echo ${GITHUB_WORKSPACE}
 
   case "${qhubSubcommand}" in
     init)

@@ -1,6 +1,9 @@
-FROM alpine:3
+FROM continuumio/anaconda3:2020.02
 
-RUN ["/bin/sh", "-c", "apk add --update --no-cache bash ca-certificates curl git jq openssh"]
+RUN apt-get update --fix-missing && \
+    apt-get install -y  bash ca-certificates curl git jq
+
+RUN pip install qhub
 
 COPY ["src", "/src/"]
 
