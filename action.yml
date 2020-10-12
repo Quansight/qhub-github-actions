@@ -1,3 +1,22 @@
 name: 'QHub GitHub Actions'
 description: 'Runs QHub commands via GitHub Actions.'
 author: 'Quansight, QHub Team <panand@quansight.com>'
+inputs:
+  qhub_actions_subcommand:
+    description: 'QHub subcommand to execute.'
+    required: true
+  qhub_actions_version:
+    description: 'QHub version to install.'
+    required: true
+  qhub_actions_working_dir:
+    description: 'QHub working directory.'
+    default: '.'
+  qhub_actions_comment:
+    description: 'Comment on the PR.'
+    default: true
+outputs:
+  qhub_actions_output:
+    description: 'QHub outputs in JSON format.'
+runs:
+  using: 'docker'
+  image: './Dockerfile'
