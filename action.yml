@@ -1,6 +1,9 @@
 name: 'QHub GitHub Actions'
 description: 'Runs QHub commands via GitHub Actions.'
 author: 'Quansight, QHub Team <panand@quansight.com>'
+branding:
+  icon: 'terminal'
+  color: 'blue'
 inputs:
   qhub_actions_subcommand:
     description: 'QHub subcommand to execute.'
