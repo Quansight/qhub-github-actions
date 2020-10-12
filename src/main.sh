@@ -47,7 +47,6 @@ function main {
   source ${scriptDir}/qhub_push.sh
 
   parseInputs
-  cd ${GITHUB_WORKSPACE}/${tfWorkingDir}
 
   case "${qhubSubcommand}" in
     init)
