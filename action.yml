@@ -1,0 +1,3 @@
+name: 'QHub GitHub Actions'
+description: 'Runs QHub commands via GitHub Actions.'
+author: 'Quansight, QHub Team <panand@quansight.com>'
